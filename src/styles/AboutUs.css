@@ -1,0 +1,102 @@
+/* General resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.about {
+  min-height: calc(100vh - 100px);
+}
+
+/* About Us Section Styling */
+.about-us {
+  padding: 80px 0;
+  color: #333; /* Default text color */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Flexbox Layout for the content */
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+}
+
+/* Text Section Styling */
+.about-text {
+  max-width: 800px;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+}
+
+.about-text h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #21325e; /* Blue color for the heading */
+  margin-bottom: 20px;
+  letter-spacing: 2px; /* Letter spacing for a more elegant look */
+  text-transform: uppercase; /* Uppercase letters for emphasis */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for the heading */
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  color: #555; /* Greyish text color for body */
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif; /* Use a clean font for better readability */
+}
+
+.about-text strong {
+  color: #e9d35b; /* Yellow color for highlighting the company name */
+  font-weight: bold;
+}
+
+.about-text a {
+  color: #0066cc; /* Blue color for links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.about-text a:hover {
+  text-decoration: underline;
+}
+
+/* Hover effect for the text block */
+.about-text:hover {
+  box-shadow: 0 6px 25px rgba(0, 102, 204, 0.2); /* Stronger shadow on hover */
+  transform: translateY(-5px); /* Slightly lift the card */
+}
+
+/* Responsive Typography for smaller screens */
+@media screen and (max-width: 768px) {
+  .about-text h2 {
+    font-size: 2rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-text p {
+    font-size: 0.75rem;
+  }
+}
